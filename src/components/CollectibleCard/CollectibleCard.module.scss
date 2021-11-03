@@ -1,0 +1,67 @@
+.itemCard {
+  height: fit-content;
+  position: relative;
+  border-radius: 6px;
+  margin: 0 15px 26px;
+  .mainImg {
+    display: block;
+    border-radius: 6px;
+  }
+}
+.activeCard {
+  position: relative;
+}
+.active{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(25, 68, 158, 0.7), rgba(25, 68, 158, 0.7)), url(../../assets/img/cartdImage/2.jpg);
+  box-shadow: 0px 1px 6px #000000;
+  border: 2px solid;
+  border-image-source: conic-gradient(from 180deg at 50% 50%, #EE1D52 -131.7deg, #69C9D0 0.09deg, #69C9D0 89.14deg, #EE1D52 228.3deg, #69C9D0 360.09deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+
+}
+.littleItem {
+  grid-row-end: span 21;
+}
+.smallItem {
+  grid-row-end: span 37;
+}
+.middleItem {
+  grid-row-end: span 44;
+}
+.largeItem {
+  grid-row-end: span 62;
+}
+
+.littleImg {
+  width: 234px;
+  height: 188px;
+  object-fit: cover;
+}
+
+.smallImg {
+  width: 234px;
+  height: 344px;
+  object-fit: cover;
+
+}
+
+.middleImg {
+  width: 234px;
+  height: 418px;
+  object-fit: cover;
+}
+
+.largeImg {
+  width: 234px;
+  height: 594px;
+  object-fit: cover;
+}

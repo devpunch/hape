@@ -1,0 +1,29 @@
+.toggle {
+  width: 47px;
+  height: 20px;
+  background: #171F30;
+  border: 1px solid #8397FF;
+  box-sizing: border-box;
+  border-radius: 20px;
+  position: relative;
+  margin-right: 12px;
+  cursor: pointer;
+  span {
+    position: absolute;
+    transition: all .3s;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3px;
+    width: 22px;
+    height: 14px;
+    background: #8397FF;
+    border-radius: 20px;
+  }
+  &.activated {
+    span {
+      transition: all .3s;
+      right: 0;
+      left: 3px;
+    }
+  }
+}

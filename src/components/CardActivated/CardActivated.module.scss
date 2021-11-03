@@ -1,0 +1,248 @@
+.wrapper {
+  position: absolute;
+  background: #1E283E;
+  padding: 12px 19px 12px;
+  border: 1px solid #2B3751;
+  box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+
+.choice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.littleBox {
+  width: 334px;
+  height: 268px;
+  object-fit: cover;
+}
+
+.smallBox {
+  width: 334px;
+  height: 430px;
+  object-fit: cover;
+}
+
+.middleBox {
+  width: 334px;
+  height: 512px;
+  object-fit: cover;
+}
+
+.largeBox {
+  width: 334px;
+  height: 686px;
+  object-fit: cover;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  img+img {
+    margin-left: 3px;
+  }
+  a {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 8px;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+}
+
+.numbers {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  .price {
+    width: 145px;
+    height: 56px;
+    background: #1E283E;
+    border: 1px solid #304063;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    span {
+      padding: 0 10px;
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      background: #1E283E;
+      transform: translateX(-50%);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+
+      color: #8397FF;
+    }
+    p {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+
+    }
+  }
+  .currency {
+    width: 145px;
+    height: 56px;
+    display: flex;
+    border: 1px solid #304063;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #222B40 0%, #181F2F 100%);
+    box-shadow: 4px 4px 8px #141A27, -4px -4px 8px #212A3D, inset -3px -3px 3px #141A27, inset 3px 3px 3px #212A3D;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      transform: translateY(-50%);
+      right: 16px;
+      width: 15px;
+      height: 13px;
+      background-image: url('../../assets/img/icons/polygon.svg');
+      background-repeat: no-repeat;
+    }
+    p {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: #8397FF;
+    }
+  }
+}
+
+.choiceSale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 15px;
+    color: #8397FF;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .transfer,
+  .burn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 33px;
+      text-decoration-line: underline;
+      color: #8397FF;
+    }
+  }
+}
+
+.choiceMenu {
+
+  &__box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+  }
+  &__put {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    a {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-decoration-line: underline;
+      color: #8397FF;
+    }
+  }
+  .edit,
+  .transfer,
+  .burn {
+    display: flex;
+    align-items: flex-end;
+    a {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-decoration-line: underline;
+      color: #8397FF;
+      margin-left: 12px;
+    }
+  }
+  .edit {
+    a {
+      margin-left: 16px;
+    }
+  }
+}
+
+.put {
+  width: 26px;
+  height: 16px;
+  margin-right: 11.5px;
+  background: #171F30;
+  opacity: 0.5;
+  border: 1px solid #8397FF;
+  border-radius: 20px;
+  position: relative;
+  span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1px;
+    width: 12px;
+    height: 12px;
+    background: #8397FF;
+    opacity: 0.5;
+    border-radius: 20px;
+  }
+}
+
+.button {
+  position: absolute;
+  bottom: -48px;
+  left: 50%;
+  transform: translateX(-50%);
+  img {
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+}

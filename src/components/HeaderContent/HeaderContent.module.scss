@@ -1,0 +1,102 @@
+.container {
+  max-width: 1182px;
+  margin: 53px auto 60px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  .elemBlue,
+  .elemPurple,
+  .elemYellow {
+    position: absolute;
+    z-index: 0;
+  }
+  .elemBlue {
+    left: 0;
+    top: -86px;
+  }
+  .elemPurple {
+    bottom: -54%;
+    right: 100px;
+  }
+  .elemYellow {
+    top: -53%;
+    right: -13%;
+  }
+}
+
+.title {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 66px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px -7px 4px #171F30;
+  position: relative;
+  z-index: 1;
+}
+
+.hypeFactory {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -30px;
+  z-index: 0;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  color: #fff;
+  margin-top: -9px;
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.subtext {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  max-width: 604px;
+  margin-bottom: 28px;
+}
+.variations {
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 5px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    margin-right: 5px;
+  }
+  &__account {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8397FF;
+  }
+}

@@ -1,0 +1,33 @@
+.mainWrap {
+  position: relative;
+}
+.container {
+  max-width: 1197px;
+  margin: 0 auto;
+  height: 1713px;
+  overflow: auto;
+  position: relative;
+  &::-webkit-scrollbar {
+    width: 0;
+    background: rgba(255, 255, 255, 0.0);
+  }
+}
+.shadow {
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(0deg, #171F30 9.3%, rgba(23, 31, 48, 0) 100%);
+}
+
+.wrapper {
+  width: 1212px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 404px);
+  grid-auto-rows: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+}

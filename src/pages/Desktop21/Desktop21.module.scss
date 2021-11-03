@@ -1,0 +1,224 @@
+.wrapper {
+  background-color: #171F30;
+  height: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.inner {
+  max-width: 763px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.createCard {
+  max-width: 374px;
+  padding: 12px 19px 22px;
+  background: #1E283E;
+  border: 1px solid #2B3751;
+  box-sizing: border-box;
+  border-radius: 8px;
+  &__links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+
+    img+img {
+      margin-left: 2px;
+    }
+    p {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      color: #FFFFFF;
+      margin-left: 8px;
+    }
+  }
+  img {
+    border-radius: 8px;
+  }
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  &__top {
+    display: flex;
+    .textarea {
+      position: relative;
+      p {
+        position: absolute;
+        top: -8px;
+        width: 57px;
+        height: 20px;
+        padding: 0 10px;
+        left: 12px;
+        z-index: 1;
+        background-color: #171F30;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #8397FF;
+      }
+      textarea {
+        width: 218px;
+        height: 188px;
+        background: #171F30;
+        border: 1px solid #304063;
+        box-sizing: border-box;
+        border-radius: 8px;
+        resize: none;
+        padding: 16px 23px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        outline: none;
+      }
+    }
+  }
+  &__bottom {
+    margin-top: 16px;
+    position: relative;
+    p {
+      position: absolute;
+      top: -8px;
+      left: 12px;
+      width: 118px;
+      height: 20px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #8397FF;
+      background-color: #171F30;
+    }
+    textarea {
+      width: 374px;
+      height: 277px;
+      background: #171F30;
+      border: 1px solid #304063;
+      box-sizing: border-box;
+      border-radius: 8px;
+      resize: none;
+      padding: 18px 22px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      outline: none;
+      color: #FFFFFF;
+    }
+  }
+}
+
+.nums {
+  display: flex;
+  flex-direction: column;
+  margin-left: 11px;
+}
+
+.ammount,
+.price{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #171F30;
+  border: 1px solid #304063;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 145px;
+  height: 56px;
+  span {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 106px;
+    height: 20px;
+    background: #171F30;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8397FF;
+  }
+  p {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #8397FF;
+  }
+}
+
+.price {
+  margin-top: 12px;
+  span {
+    width: 63px;
+  }
+}
+
+.currency {
+  background: #171F30;
+  border: 1px solid #304063;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 145px;
+  height: 56px;
+  background: linear-gradient(180deg, #222B40 0%, #181F2F 100%);
+  box-shadow: 4px 4px 8px #141A27, -4px -4px 8px #212A3D, inset -3px -3px 3px #141A27, inset 3px 3px 3px #212A3D;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  position: relative;
+  cursor: pointer;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 13px;
+    top: 53%;
+    transform: translateY(-50%);
+    right: 16px;
+    background-image: url(../../assets/img/icons/polygon.svg);
+    background-repeat: no-repeat;
+  }
+  p {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #8397FF;
+
+  }
+}
+
+.put {
+  display: flex;
+  align-items: center;
+  margin-top: 19px;
+  p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 15px;
+    color: #8397FF;
+  }
+}
+
+
+
+.buttons {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
